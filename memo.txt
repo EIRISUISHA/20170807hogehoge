@@ -1,5 +1,29 @@
-<<<<<<< HEAD
-ソースを編集しました
-=======
-aaaaaaaaaaaaaa
->>>>>>> 49e79915a498e1f72ed11f998262eae2e0437721
+
+Github プルリクエスト
+
+・ブランチについて
+masterブランチ 
+開発（チェック）が完了したデータのみが入る本番環境用ブランチ
+
+Topicブランチ（個人名ブランチ）
+個人で開発を進める作業環境用ブランチ
+
+developブランチ
+masterブランチを壊さない（エラーが出ないように）為にある中間ブランチ
+Topic->developへマージして、developブランチを検証して問題なければ、
+develop->masterブランチへマージする
+
+mergeとは
+ブランチが保有しているデータを統合する
+
+・Pull Request Flow
+Github上にpushされたTopicブランチを確認・検証を依頼（リクエスト）することで、バグを防ぐ手法
+
+1.ローカル(SourceTree)でTopicブランチを作成
+2.開発 & commit
+3.Githubへpush
+4.Github上でPull Request
+5.Github上から内容チェック & 確認
+6.修正が必要な場合は2に戻る（※4は省く）
+7.完成したらGithub上でmergeする
+8.developブランチをpullする（マージされたデータを取得できる）
